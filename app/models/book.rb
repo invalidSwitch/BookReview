@@ -7,7 +7,9 @@ class Book < ActiveRecord::Base
 
   has_attached_file :book_img, styles:
     { book_index: "250x350>", book_show: "325x475>" },
-    default_url: "/images/:style/missing.png"
+    #default_url: "/images/:style/missing.png"
+    :default_url => ActionController::Base.helpers.asset_path('missing.png')
+
   validates_attachment_content_type :book_img, content_type: /\Aimage\/.*\Z/
 
 end
