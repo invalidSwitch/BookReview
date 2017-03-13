@@ -23,6 +23,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 # Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 4.1', '>= 4.1.1'
 # Easy upload management for ActiveRecord
+# requires ImageMagic on the system --> sudo apt-get install imagemagick -y
 gem 'paperclip', '~> 4.3', '>= 4.3.7'
 # Pg is the Ruby interface to the {PostgreSQL RDBMS}[http://www.postgresql.org/]
 #gem 'pg', '~> 0.19.0'
